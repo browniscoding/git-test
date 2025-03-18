@@ -39,7 +39,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-i learnt how css handle responsive page (desktop & mobile), and creating github
+i learnt how css handle responsive page (desktop & mobile), and setting up github
 
 ### Continued development
 i may try Semantic HTML next time
