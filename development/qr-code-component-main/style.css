@@ -7,9 +7,27 @@ body {
     font-family: Arial, sans-serif; /* Set default font */
     background-color: hsl(212, 45%, 89%); /* Ice Blue background */
     height: 100vh; /* Full viewport height */
-    display: flex;
+    display: flex;  
+    flex-direction: column;
     text-align: center;
     color: #333; /* Dark text for contrast */
+}
+
+
+header, footer {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+
+main {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 8px;
 }
 
 .qrBox {
@@ -22,7 +40,7 @@ body {
     justify-content: center; /* Center items vertically */
     padding: 10px;
     text-align: center;
-    width: 20%; /* Set a fixed width */
+    width: 25%; /* Set a fixed width */
 }
 
 /* Mobile View: Adjust when screen width is less than 600px */
@@ -65,3 +83,4 @@ body {
     color: #5F646A; /* Text color */
     text-align: center; /* Align text: left, center, right, justify */
   }
+
