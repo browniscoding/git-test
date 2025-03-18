@@ -25,6 +25,14 @@ body {
     width: 20%; /* Set a fixed width */
 }
 
+/* Mobile View: Adjust when screen width is less than 600px */
+@media (max-width: 600px) {
+  .qrBox {
+      width: 80%;
+      padding: 15px;
+  }
+}
+
 .qrimg {
     width: 100%;
     border-radius: 8px;
