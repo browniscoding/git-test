@@ -1,0 +1,170 @@
+/* Regular Variable Font */
+@font-face {
+  font-family: 'FigTree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Supports font weights from 100 to 900 */
+  font-style: normal;
+}
+
+/* Italic Variable Font */
+@font-face {
+  font-family: 'FigTree';
+  src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-family: 'FigTree', sans-serif; /* Set default font */
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh; /* Full viewport height */
+    display: flex;  
+    flex-direction: column;
+    text-align: center;
+    color: #333; /* Dark text for contrast */
+}
+
+header, footer {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  
+  
+  main {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 8px;
+  }
+
+  .blogBox {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 20px;
+    text-align: center;
+    width: 25%; /* Set a fixed width */
+    position: relative;
+  }
+
+  @media (max-width: 600px) {
+    .blogBox {
+        width: 80%;
+    }
+    .blogimg {
+      aspect-ratio: 3 / 2; 
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .blogimg {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    padding: 5px;
+  }
+
+  .blogContent {
+    padding-top: 8px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .blogTagBox{
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 5px;
+    width: 22%; /* Set a fixed width */
+    align-items: flex;
+    text-align: center;
+    left: 20px;
+  }
+
+  .blogTagText{
+    font-family: 'FigTree', sans-serif;
+    font-size: clamp(10px, 1.6vw, 11px); /* Set font size */
+    font-weight: 800; /* Options: normal, bold, lighter, etc. */
+    text-align: center;
+    margin: 5px 5px 5px 5px; /* Top, right, bottom, left */
+    
+  }
+
+  .blogTextBox{
+    padding-top: 8px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%; /* Set a fixed width */
+    align-items: flex;
+    text-align: center;
+    left: 20px;
+  }
+
+  .blogDateText{
+    font-family: 'FigTree', sans-serif;
+    font-size: clamp(12px, 1.6vw, 13px); /* Set font size */
+    font-weight: 500;
+    text-align: left;
+    margin: 5px 5px 5px 5px; /* Top, right, bottom, left */
+  }
+
+  .blogTitleText{
+    font-family: 'FigTree', sans-serif;
+    font-size: clamp(15.5px, 1.6vw, 25px); /* Set font size */
+    font-weight: 800;
+    text-align: left;
+    margin: 5px 5px 5px 5px; /* Top, right, bottom, left */
+  }
+  .blogTitleText:hover {
+    color: hsl(47, 88%, 63%); /* or any color you like */
+    cursor: pointer;
+  }
+  .blogContentText{
+    font-family: 'FigTree', sans-serif;
+    color: hsl(0, 0%, 42%);
+    font-size: clamp(12.5px, 1.6vw, 15px); /* Set font size */
+    font-weight: 500;
+    text-align: left;
+    margin: 5px 5px 5px 5px; /* Top, right, bottom, left */
+    line-height: 1.5;
+  }
+
+  .blogauthorbox {
+    padding-top: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%; /* Set a fixed width */
+    display: flex;
+    align-items: center; 
+    text-align: left;
+    gap: 10px;
+  }
+  
+  .blogauthorimg {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    left: 20px;
+  }
+
+  .blogauthorname {
+    font-family: 'FigTree', sans-serif;
+    font-size: clamp(12px, 1.6vw, 14px); /* Set font size */
+    font-weight: 800;
+    text-align: left;
+    margin:0; /* Top, right, bottom, left */
+  }
